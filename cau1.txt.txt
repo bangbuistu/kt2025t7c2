@@ -1,0 +1,9 @@
+Xung đột trong git xảy ra khi git không thể tự động gộp hai thay đổi (khi merge hoặc rebase).
+
+Các trường hợp xảy ra xung đột, có 2 bạn cùng thực hiện thay đổi trên cùng 1 nhánh, 1 bản merge hoặc rebase trước, và bạn thứ 2 thực hiện tương tự sau
+Trong trường hợp này, bạn thứ 2 khi thực thi câu lệnh sẽ được hiển thị rằng là đang có conflict, bắt buộc bạn phải mở file bị conflict lên
+tìm các dấu <<<<<<,=========,>>>>>>>> sau đó sửa thủ công bằng cách giữ lại phần code mong muốn, xóa các dấu marker, bước kế tiếp git add file đã sửa
+và cuối cùng là git commit ( nếu đang merge ) hoặc git rebase --continue (nếu đang rebase)
+
+Có các câu lệnh khác như git checkout --ours tên file : chấp nhận phiên bản của mình
+			git checkout --theirs tên file : chấp nhận phiên bản của họ
