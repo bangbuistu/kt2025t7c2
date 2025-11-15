@@ -12,4 +12,5 @@ int main(){
 	else{
 		cout<< n + " khong la boi so cua 3;
 	}
+	return 0;
 }
