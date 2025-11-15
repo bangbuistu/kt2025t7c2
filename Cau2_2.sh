@@ -1,4 +1,4 @@
-x="${1:3}"
+local x=$1
 if [[ $(( x % 3 )) -eq 0 ]]; then
     echo "So nay la boi so cua 3";
 else
