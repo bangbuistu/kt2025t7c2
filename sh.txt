@@ -1,0 +1,7 @@
+$x=3
+	
+	if ($x%2==0)
+		echo "la so chan";
+
+	else echo "la so le";
+	fi
