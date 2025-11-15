@@ -1,4 +1,4 @@
-#!/usr/bim/env bash
+#!/usr/bin/env bash
 
 echo "Nhap 1 so nguyen"
 read n
