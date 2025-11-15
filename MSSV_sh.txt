@@ -1,0 +1,17 @@
+kiem_tra_boi3()
+{
+	n=$1
+	if((n<3));then
+		echo "$n khong phai la boi 3"
+		return
+	fi
+
+	for((i=3;i*i<=n;i++))
+	do
+		if((i%3!=0&&i<0))
+			echo"$n khong phai la boi cua 3"
+			return
+		fi
+	done
+	echo "$n la boi cua 3"
+}
