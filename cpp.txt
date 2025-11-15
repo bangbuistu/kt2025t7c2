@@ -1,0 +1,12 @@
+<include> 
+
+void main(){
+	int x;
+	cout<<"nhap: ";
+	cin>>x;
+	if (x%2==0)
+		cout<<"la so chan";
+
+	else cout<<"la so le";
+
+}
